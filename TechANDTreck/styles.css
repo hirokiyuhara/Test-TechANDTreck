@@ -1,0 +1,289 @@
+/* CSSリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* フォントと色の設定 */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* ハンバーガーメニューのアイコン */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* メインビジュアル */
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+/* セクション */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.program,
+.event {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.program h3,
+.event h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.program p,
+.event p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* お問い合わせフォーム */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* フッター */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* レスポンシブデザイン */
+
+/* スマートフォン向けのスタイル（最大767px） */
+@media screen and (max-width: 767px) {
+  /* ヘッダー */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  nav li a {
+    display: block;
+    width: 100%;
+  }
+
+  /* ハンバーガーメニューのアイコンを表示 */
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* メインビジュアルのテキストサイズを調整 */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* プログラム・コース情報 */
+  .programs-container {
+    flex-direction: column;
+  }
+
+  .program {
+    width: 100%;
+  }
+
+  /* フォームのスタイル */
+  #contact-form input,
+  #contact-form select,
+  #contact-form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* タブレット向けのスタイル（768pxから1024px） */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  /* プログラムセクションのレイアウト */
+  .programs-container {
+    flex-wrap: wrap;
+  }
+
+  .program {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+}

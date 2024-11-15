@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech&Treck - プログラミングと自然体験で未来を創る</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSSファイルのリンク -->
+    <link rel="stylesheet" href="sanitize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-container">
+        <div class="logo">Tech&Treck</div>
+        <!-- ハンバーガーメニューのアイコン -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <!-- ナビゲーションメニュー -->
+        <nav id="nav">
+          <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#about">事業紹介</a></li>
+            <li><a href="#programs">プログラム</a></li>
+            <li><a href="#events">イベント</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+      <h1>プログラミングと自然体験で未来を創る</h1>
+      <p>子供たちにデジタルと自然の学びを提供します</p>
+      <a href="#programs" class="btn">プログラムを見る</a>
+    </section>
+
+    <!-- 事業紹介 -->
+    <section id="about">
+      <h2>ミッション・ビジョン</h2>
+      <p>
+        子供たちにデジタルと自然の両方の学びを提供し、バランスの取れた未来の創造者を育成します。
+      </p>
+      <h3>特徴</h3>
+      <ul>
+        <li>小グループ制で一人ひとりに丁寧な指導</li>
+        <li>経験豊富な講師陣と安全管理体制</li>
+        <li>プログラミングと自然体験を組み合わせた独自のカリキュラム</li>
+      </ul>
+    </section>
+
+    <!-- プログラム・コース情報 -->
+    <section id="programs">
+      <h2>プログラム・コース情報</h2>
+      <div class="programs-container">
+        <div class="program">
+          <h3>プログラミングコース</h3>
+          <p><strong>対象年齢：</strong>8歳〜12歳</p>
+          <p><strong>使用言語：</strong>Scratch、Python</p>
+          <p>
+            <strong>学習内容：</strong
+            >ゲーム開発、ロボット制御、ウェブサイト作成
+          </p>
+        </div>
+        <div class="program">
+          <h3>自然体験コース</h3>
+          <p>
+            <strong>活動内容：</strong
+            >森林ハイキング、キャンプファイヤー、生態系学習
+          </p>
+          <p><strong>安全対策：</strong>専門スタッフによるサポート、保険加入</p>
+        </div>
+        <div class="program">
+          <h3>組み合わせコース</h3>
+          <p>
+            プログラミングで自然観察デバイスを作成し、データを活用した環境保全プロジェクトを行います。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- イベント・ワークショップ情報 -->
+    <section id="events">
+      <h2>イベント・ワークショップ情報</h2>
+      <div class="event">
+        <h3>秋のプログラミングキャンプ</h3>
+        <p><strong>日時：</strong>2023年10月15日〜10月17日</p>
+        <p><strong>場所：</strong>〇〇キャンプ場</p>
+        <p><strong>参加費：</strong>¥30,000</p>
+        <a href="#contact" class="btn">申し込む</a>
+      </div>
+      <!-- 過去のイベントレポートなどを追加できます -->
+    </section>
+
+    <!-- お申し込み・お問い合わせ -->
+    <section id="contact">
+      <h2>お申し込み・お問い合わせ</h2>
+      <form id="contact-form">
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">年齢:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="course">希望コース:</label>
+        <select id="course" name="course">
+          <option value="programming">プログラミングコース</option>
+          <option value="nature">自然体験コース</option>
+          <option value="combined">組み合わせコース</option>
+        </select>
+
+        <button type="submit">送信</button>
+      </form>
+      <p><strong>お問い合わせ先：</strong></p>
+      <p>電話番号：012-3456-7890</p>
+      <p>メール：<a href="mailto:info@techtreck.jp">info@techtreck.jp</a></p>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <div class="social-media">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+      <p>© 2023 Tech&Treck All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="script.js"></script>
+  </body>
+</html>
